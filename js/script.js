@@ -1,7 +1,7 @@
 const log = document.querySelector("#array")
 const video = document.querySelector("#video")
 const startBtn = document.querySelector("button")
-
+const knnClassifier = ml5.KNNClassifier();
 //
 // start de app - aangeroepen onderin dit document
 //
@@ -76,9 +76,9 @@ function logData(detections) {
     //let leftEyeX = detections[0].landmarks.positions[43]._x;
 
     // example : use functions to get the eyes
-    const leftEye = detections[0].landmarks.getLeftEye()
+    //const leftEye = detections[0].landmarks.getLeftEye()
     //const rightEye = detections[0].landmarks.getRightEye()
-    console.log(leftEye);
+    //console.log(leftEye);
 }
 
 
