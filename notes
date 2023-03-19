@@ -17,3 +17,22 @@ Kies een pose model: (handpose, bodypose, facepose) en bedenk een eenvoudige toe
 Lees de pose data uit in de console. Dit verschilt afhankelijk van het pose model! Kijk hoe je de data kan omzetten naar een array van numbers.
 Maak een button in de html die KNN.learn() kan aanroepen met deze numbers. Train met verschillende labels en voorbeelden.
 Voorspel nieuwe poses.
+
+
+
+
+const log = document.querySelector("#array")
+const video = document.querySelector("#video")
+const startBtn = document.querySelector("button")
+const knnClassifier = ml5.KNNClassifier();
+let str = []; // Declare str as a global variable here
+
+
+
+function logData(detections) {
+    for (let i = 0; i < 20; i++) {
+        str.push(detections[0].landmarks.positions[i]._x);
+        str.push(detections[0].landmarks.positions[i]._y);
+    }
+    console.log(str); // log the whole array
+}
