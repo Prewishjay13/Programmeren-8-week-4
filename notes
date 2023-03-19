@@ -1,5 +1,6 @@
 https://arnav25.medium.com/how-to-face-api-in-react-953cfc70d6d
 https://www.freecodecamp.org/news/authenticate-with-face-recognition-reactjs/
+https://www.youtube.com/watch?v=wVK3HHbli7g
 https://www.youtube.com/watch?v=wVK3HHbli7g&ab_channel=LamaDev
 
 
@@ -8,3 +9,11 @@ Bouwen ML5 pose detection app
 Bedenk een concept voor het werken met gezichtsuitdrukking herkenning, lichaamspose herkenning, handpose herkenning of object detectie.
 Dit concept moet geschikt zijn voor de positionele data die je uit ML5 krijgt. Dit zijn bijvoorbeeld de posities van je polsen, de afstand tussen je voeten, vingers of ogen.
 Lees pose-data uit met javascript en geef feedback aan de gebruiker via de UI. Maak ook duidelijk wat de bedoeling van de app is via de UI, middels een duidelijke titel en instructies.
+
+
+Inleveropdracht. Maak elke stap af voordat je aan de volgende begint:
+
+Kies een pose model: (handpose, bodypose, facepose) en bedenk een eenvoudige toepassing.
+Lees de pose data uit in de console. Dit verschilt afhankelijk van het pose model! Kijk hoe je de data kan omzetten naar een array van numbers.
+Maak een button in de html die KNN.learn() kan aanroepen met deze numbers. Train met verschillende labels en voorbeelden.
+Voorspel nieuwe poses.
