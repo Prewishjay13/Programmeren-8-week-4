@@ -14,7 +14,7 @@ body {
 }
 
 div {
-    background-color: rgb(36, 32, 65);
+
     color: white;
     font-family: monospace;
     min-height: 20px;
@@ -22,6 +22,16 @@ div {
 }
 
 .video-wrapper {
+    background-color: rgb(36, 32, 65);
+    width: 720px;
+    height: 405px;
+}
+
+#array{
+    background-color: rgb(36, 32, 65);
+}
+#buttons {
+    background-color: rgb(109, 164, 243);
     width: 720px;
     height: 405px;
 }
@@ -35,9 +45,9 @@ canvas {
 }
 
 button {
-    width: 200px;
-    height: 80px;
-    font-size: 2em;
+    width: 100px;
+    height: 40px;
+    font-size: 1em;
     padding: 10px;
     background: white;
     border: 1px solid skyblue;
@@ -45,7 +55,3 @@ button {
     margin: 20px;
 }
 
-button:hover {
-    background-color: darkblue;
-    color: white;
-}

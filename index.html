@@ -6,24 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>FACE API met landmarks</title>
     <script defer src="./js/face-api.min.js"></script>
-    <script defer src="./js/script.js"></script>
+    <script defer src="./js/script.js">
+    </script><script src="./js/knear.js"></script>
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>FACE API met landmarks</h1>
-    <h2>Dit is de trainings pagina!</h2>
+    <h2>Face api met landmarks trainingspagina</h2>
     <nav><a href="face.html">Face-opdracht-week-5</a></nav>
     <div class="video-wrapper">
       <video id="video" width="720" height="405" autoplay muted></video>
     </div>
-    <br />
+   <div id="buttons">
     <button id="labelOne">Happy</button>
-    <p><span id="faceOne">0</span> Duck</p>
+    <p><span id="faceOne">0</span> Happy</p>
     <button id="labelTwo">Neutral</button>
-    <p><span id="faceTwo">0</span> Duck</p>
-    <p><button id="train">TRAIN</button><span id="loss"></span></p>
-    <p><button id="save">SAVE</button></p>
-    <h2>Landmarks data</h2>
+    <p><span id="faceTwo">0</span> Neutral</p>
+    <p><button id="train">Train</button><span id="loss"></span></p>
+    <p><button id="save">Save</button></p>
+  </div>>
+    <h3>Landmarks data</h3>
     <div id="array"></div>
   </body>
 </html>

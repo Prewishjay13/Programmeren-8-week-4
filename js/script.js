@@ -67,6 +67,7 @@ function logData(detections) {
     let str = ""
     for (let i = 0; i < 20; i++) {
         str += detections[0].landmarks.positions[i]._x + ", " + detections[0].landmarks.positions[i]._y + ", "
+        //console.log(str);
     }
     log.innerText = str
     
@@ -75,8 +76,9 @@ function logData(detections) {
     //let leftEyeX = detections[0].landmarks.positions[43]._x;
 
     // example : use functions to get the eyes
-    //const leftEye = detections[0].landmarks.getLeftEye()
+    const leftEye = detections[0].landmarks.getLeftEye()
     //const rightEye = detections[0].landmarks.getRightEye()
+    console.log(leftEye);
 }
 
 
